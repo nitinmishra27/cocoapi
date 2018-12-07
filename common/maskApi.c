@@ -7,6 +7,7 @@
 #include "maskApi.h"
 #include <math.h>
 #include <stdlib.h>
+#pragma GCC diagnostic ignored "-Wuninitialized"
 
 uint umin( uint a, uint b ) {
     return (a<b) ? a : b;
