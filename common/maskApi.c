@@ -249,7 +249,7 @@ void bbNms( BB dt, siz n, uint *keep, double thr ) {
 void rleToBbox( const RLE *R, BB bb, siz n ) {
     siz i;
     for( i=0; i<n; i++ ) {
-        uint h, w, x, y, xs, ys, xe, ye, xp, cc, t;
+        uint h, w, x, y, xs, ys, xe, ye, xp=0, cc, t;
         siz j, m;
         h=(uint)R[i].h;
         w=(uint)R[i].w;
